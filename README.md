@@ -7,6 +7,7 @@ The central issue that Kent resolves is to ensure that pandas dataframes are ava
 in both of our data contexts: CLI and Notebooks
 
 ## Usage
+```
 Kent = GXKent()
 Kent.is_print_on_success = False
 
@@ -34,7 +35,7 @@ Kent.capture_expectation(
     expectation_name='Between year comparision {this_year} {that_year}',
     expectation_result=gxDF.expect_column_avg_to_be_between('new_npi_cnt',50000,60000)
 )
-
+```
 
 ## Authors
 Fred Trotter and Jose Cortina
